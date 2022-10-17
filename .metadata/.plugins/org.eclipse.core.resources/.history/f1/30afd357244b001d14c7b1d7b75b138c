@@ -1,0 +1,13 @@
+
+public class teste {
+
+	public static void main(String[] args) {
+		salarioBruto = Double.valueOf(1000.00);
+
+        salarioLiquido = salarioBruto / dias.intValue();
+
+        System.out.println(salarioLiquido);
+
+	}
+
+}

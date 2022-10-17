@@ -1,0 +1,28 @@
+package br.com.fiap.banco;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Conta contaCorrente = new Conta();
+		contaCorrente.depositar(50.0);
+		contaCorrente.setAgencia(123);
+		contaCorrente.setNumero(321) ;
+		
+		contaCorrente.depositar(1000);
+		System.out.println(contaCorrente.verificarSaldo());
+		
+		Conta contaPoupanca = new Conta(123, 432, 50);
+		contaPoupanca.retirar(25);
+		System.out.println(contaPoupanca.verificarSaldo());;
+		
+		//nenhum objeto associado
+		Conta cc2 = null;
+		if (cc2 != null) {
+			cc2.depositar(1000);
+		}
+		
+		
+
+	}
+
+}

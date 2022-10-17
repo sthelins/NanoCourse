@@ -1,0 +1,46 @@
+
+public class prova {
+	private static Integer dias;
+
+    private static Double salarioBruto;
+
+    private static Double salarioLiquido;
+
+	public static Integer getDias() {
+		return dias;
+	}
+
+	public static void setDias(Integer dias) {
+		prova.dias = dias;
+	}
+
+	public static Double getSalarioBruto() {
+		return salarioBruto;
+	}
+
+	public static void setSalarioBruto(Double salarioBruto) {
+		prova.salarioBruto = salarioBruto;
+	}
+
+	public static Double getSalarioLiquido() {
+		return salarioLiquido;
+	}
+
+	public static void setSalarioLiquido(Double salarioLiquido) {
+		prova.salarioLiquido = salarioLiquido;
+		
+	}
+	
+	public static void main(String[] args) {   
+
+
+        salarioBruto = Double.valueOf(1000.00);
+
+        salarioLiquido = salarioBruto / dias.intValue();
+
+        System.out.println(salarioLiquido);
+
+  }
+    
+    
+}

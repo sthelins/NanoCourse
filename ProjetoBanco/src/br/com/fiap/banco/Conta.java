@@ -1,0 +1,86 @@
+package br.com.fiap.banco;
+
+/**
+ * Classe que abstrai uma Conta Bancária
+ * @author sthefanylins
+ * @version 1.0
+ */
+public class Conta {
+	
+	// === atributos ====================================================================
+	/*
+	 * Numero da Conta
+	 */
+	private int numero;
+	
+	/*
+	 * Numero da agencia
+	 */
+	private int agencia;
+	
+	/*
+	 * Saldo da Conta
+	 */
+	private double saldo;
+	
+	
+	
+	
+	//construtor padrao 
+	public Conta() {}
+	
+	
+	
+	//construtor que recebe tres argumentos
+	//                        parametro
+	public Conta(int numero, int agencia, double saldo) {
+		//this puxa o atributo agencia
+		this.numero = numero;
+		//            paramento agencia
+		this.agencia = agencia;
+		this.saldo = saldo;
+	}
+	
+	
+	
+	// ===== metodos ==================================================
+	
+	/**
+	 * Deposita um valor ao saldo da conta
+	 * @param valor Valor a ser depositado
+	 */
+	public void depositar(double valor) {
+		this.saldo += valor;
+	}
+	
+	/**
+	 * Retira um valor do saldo da conta
+	 * @param valor Valor a ser retirado
+	 */
+	public void retirar(double valor) {
+		this.saldo -= valor;
+	}
+
+	
+	//gets and sets
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+	
+}

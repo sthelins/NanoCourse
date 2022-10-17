@@ -1,0 +1,34 @@
+package br.com.fiap.banco;
+
+public class Conta {
+	protected int agencia;
+	int numero;
+	double saldo;
+	
+	public Conta() {
+		
+	}
+
+	public Conta(int agencia, int numero, double saldo) {
+		
+		this.agencia = agencia;
+		this.numero = numero;
+		this.saldo = saldo;
+	}
+	
+	//void - não vai ter retorno
+	public void depositar(double valor) {
+		this.saldo += valor;
+	}
+	
+	public void retirar(double valor) {
+		this.saldo -= valor;
+	}
+	
+	//double - vai retornar um valor double
+	public double verificarSaldo() {
+		return saldo;
+	}
+	
+	
+}

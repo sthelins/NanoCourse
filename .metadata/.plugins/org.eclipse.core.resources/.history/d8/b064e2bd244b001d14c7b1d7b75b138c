@@ -1,0 +1,11 @@
+package Sthefany;
+
+public class Sthefany {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("O aprendizado é contínuo");
+		System.out.println("E sempre haverá um próximo nível");
+	}
+
+}

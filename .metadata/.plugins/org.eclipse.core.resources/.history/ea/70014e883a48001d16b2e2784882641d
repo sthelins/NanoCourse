@@ -1,0 +1,19 @@
+package br.com.fiap.ecommerce;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		int idade = 19;
+		double peso = 53.5;
+		boolean namora = true;
+		String nome = "Sthefany";
+		
+		System.out.println(nome);
+		System.out.println(idade);
+		
+		
+		
+
+	}
+
+}

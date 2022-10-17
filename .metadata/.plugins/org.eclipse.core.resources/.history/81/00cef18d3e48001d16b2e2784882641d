@@ -1,0 +1,16 @@
+package br.com.fiap.ecommerce;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		double x = 18.5;
+		int y = (int) x;
+		
+		System.out.println(y);
+		
+		
+		
+
+	}
+
+}

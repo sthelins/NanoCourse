@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\Sthefany\nanoCurso\.metadata\.plugins\org.eclipse.jdt.core
+2199241781.index
+3865310033.index
+2159265395.index
+1865797976.index
+1201096014.index

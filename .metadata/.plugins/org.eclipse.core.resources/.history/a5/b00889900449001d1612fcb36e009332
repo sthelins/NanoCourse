@@ -1,0 +1,71 @@
+package com.javapdf;
+
+/*
+ * Classe que abstrai uma Conta Bancária
+ * @author sthefanylins
+ * @version 1.0
+ */
+public class Conta {
+	
+	// === atributos ====================================================================
+	/*
+	 * Numero da Conta
+	 */
+	public int numero;
+	
+	/*
+	 * Numero da agencia
+	 */
+	public int agencia;
+	
+	/*
+	 * Saldo da Conta
+	 */
+	public double saldo;
+	
+	
+	
+	
+	//construtor padrao 
+	public Conta() {}
+	
+	
+	
+	//construtor que recebe tres argumentos
+	//                        parametro
+	public Conta(int numero, int agencia, double saldo) {
+		//this puxa o atributo agencia
+		this.numero = numero;
+		//            paramento agencia
+		this.agencia = agencia;
+		this.saldo = saldo;
+	}
+	
+	
+	
+	// ===== metodos ==================================================
+	
+	/*
+	 * Deposita um valor ao saldo da conta
+	 * @param valor Valor a ser depositado
+	 */
+	public void depositar(double valor) {
+		this.saldo += valor;
+	}
+	
+	/*
+	 * Retira um valor do saldo da conta
+	 * @param valor Valor a ser retirado
+	 */
+	public void retirar(double valor) {
+		this.saldo -= valor;
+	}
+	
+	/*
+	 * Verifica o saldo da conta
+	 * @return Valor do salod da conta
+	 */
+	public double verificarSaldo() {
+		return saldo;
+	}
+}

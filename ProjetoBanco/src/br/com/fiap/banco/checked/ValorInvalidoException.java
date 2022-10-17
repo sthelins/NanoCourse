@@ -1,0 +1,12 @@
+package br.com.fiap.banco.checked;
+
+public class ValorInvalidoException extends Exception {
+	
+	//public void depositar(double valor){
+	//	  if (valor < 0){
+	//	    throw new ValorInvalidoException();
+	//	  }
+	//	  saldo = saldo + valor;
+	//	}
+
+}

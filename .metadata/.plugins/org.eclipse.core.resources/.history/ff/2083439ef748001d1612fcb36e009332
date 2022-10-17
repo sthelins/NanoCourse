@@ -1,0 +1,22 @@
+package com.javapdf;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		//instanciar classe conta
+		Conta cc = new Conta();
+		//criar objeto conta
+		cc.saldo = 50;
+		cc.agencia = 123;
+		cc.numero = 321;
+		
+		//chamar metodo
+		cc.depositar(100);
+		
+		//chamar outro metodo e imprimir no console o valor do retorno
+		System.out.println(cc.verificarSaldo());
+
+	}
+
+}

@@ -1,0 +1,53 @@
+package br.com.fiap.banco;
+
+/**
+ * Classe que abstrai uma Conta Bancária
+ * @author Sthefany Lins
+ * @version 1.0
+ */
+public class Conta {
+	protected int agencia;
+	int numero;
+	double saldo;
+	
+	public Conta() {
+		
+	}
+
+	public Conta(int agencia, int numero, double saldo) {
+		
+		this.agencia = agencia;
+		this.numero = numero;
+		this.saldo = saldo;
+	}
+	
+	//void - não vai ter retorno
+	/** 
+	 * Acrescenta valor ao Saldo da Conta
+	 * @param valor a ser depositado
+	 */
+	public void depositar(double valor) {
+		this.saldo += valor;
+	}
+	
+	
+	/** 
+	 * Retira valor ao Saldo da Conta
+	 * @param valor 
+	 * @see depositar
+	 */
+	public void retirar(double valor) {
+		this.saldo -= valor;
+	}
+	
+	//double - vai retornar um valor double
+	/** 
+	 * Verificar Saldo da Conta
+	 * @return Valor do saldo da Conta
+	 */
+	public double verificarSaldo() {
+		return saldo;
+	}
+	
+	
+}

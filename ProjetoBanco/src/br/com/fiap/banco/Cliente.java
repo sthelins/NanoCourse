@@ -1,0 +1,19 @@
+package br.com.fiap.banco;
+
+public class Cliente {
+	
+	//para atributos do tipo boolean
+
+	private boolean especial;
+	
+	public boolean isEspecial() {
+		return especial;
+	}
+	
+	public void setEspecial(boolean especial) {
+		this.especial = especial;
+	}
+
+
+
+}
